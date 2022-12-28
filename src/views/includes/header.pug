@@ -1,0 +1,50 @@
+nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+  a.navbar-brand(href='#') ЦСМ
+  button.navbar-toggler(
+    type='button',
+    data-toggle='collapse',
+    data-target='#navbarsExampleDefault',
+    aria-controls='navbarsExampleDefault',
+    aria-expanded='false',
+    aria-label='Toggle navigation'
+  )
+    span.navbar-toggler-icon
+  #navbarsExampleDefault.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      if url === '/'
+        li.nav-item.active
+          a#main.nav-link(href='/') Головна
+      else
+        li.nav-item
+          a#main.nav-link(href='/') Головна
+      if url === '/about'
+        li.nav-item.active
+          a#about.nav-link(href='/about') Про центр
+      else
+        li.nav-item
+          a#about.nav-link(href='/about') Про центр
+      if url === '/price'
+        li.nav-item.active
+          a#price.nav-link(href='/price') Ціни
+      else
+        li.nav-item
+          a#price.nav-link(href='/price') Ціни
+      if url === '/staff'
+        li.nav-item.active
+          a#stuff.nav-link(href='/staff') Лікарі
+      else
+        li.nav-item
+          a#stuff.nav-link(href='/staff') Лікарі
+      if url === '/contacts'
+        li.nav-item.active
+          a#contacts.nav-link(href='/contacts') Контакти
+      else
+        li.nav-item
+          a#contacts.nav-link(href='/contacts') Контакти
+    .my-2.my-lg-0
+      .d-flex.align-items-center
+        |
+        i.bi.bi-telephone-fill.p-1.mr-1(
+          style='font-size: 1rem; color: #69e3c5'
+        )
+        h6.mr-sm-2.card-text.main_phone 044 444 00 44

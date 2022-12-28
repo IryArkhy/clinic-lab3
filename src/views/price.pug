@@ -1,0 +1,13 @@
+extends layout
+include mixins/_priceTable
+
+block content
+  - const url = '/price';
+  include includes/header.pug
+  .mb-5
+  main.container-fluid.pt-5(role='main')
+    h3.text-center.mb-5 Контакти
+    .container
+      +priceTable('Консультація',consultations)
+      +priceTable('Лікарська маніпуляція',manipulations)
+      +priceTable('Інструментальне дослідження',examination)

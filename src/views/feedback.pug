@@ -1,0 +1,13 @@
+extends layout
+include mixins/_feedbackCard
+
+block content
+  - const url = '/feedback';
+  include includes/header.pug
+  .mb-5
+  main.container-fluid.pt-5(role='main')
+    h3.text-center.mb-5 Відгуки наших пацієнтів
+    .container
+      .d-flex.flex-column
+        each feed in feedback
+          +feedbackCard(feed)

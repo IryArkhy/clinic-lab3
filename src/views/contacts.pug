@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  - let url = '/contacts';
+  include includes/header.pug
+  .mb-5
+  main.container-fluid.pt-5(role='main')
+    h3.text-center.mb-5 Контакти
+    .d-flex.justify-content-between.container
+      .d-flex.flex-column.mb-3.align-items-center
+        |
+        i.bi.bi-telephone-fill.p-1(style='font-size: 2rem; color: #69e3c5')
+        p.p-1 Телефон 1:
+        p.p-1 +38 (067) 000 00 00
+      .d-flex.flex-column.mb-3.align-items-center
+        |
+        i.bi.bi-telephone.p-1(style='font-size: 2rem; color: #69e3c5')
+        p.p-1 Телефон 2:
+        p.p-1 +38 (093) 000 00 00
+      .d-flex.flex-column.mb-3.align-items-center
+        |
+        i.bi.bi-envelope-at-fill.p-1(style='font-size: 2rem; color: #69e3c5')
+        p.p-1 Електронна пошта:
+        p.p-1 family-doc@med.com.ua
+      .d-flex.flex-column.mb-3.align-items-center
+        |
+        i.bi.bi-info-circle-fill.p-1(style='font-size: 2rem; color: #69e3c5')
+        p.p-1 Call-центр:
+        p.p-1 пн–пт 8:00–14:00
+      .d-flex.flex-column.mb-3.align-items-center
+        |
+        i.bi.bi-geo-alt-fill.p-1(style='font-size: 2rem; color: #69e3c5')
+        p.p-1 Адреса:
+        p.p-1 м. Одеса, вул. Бульвар Фонтанів 5

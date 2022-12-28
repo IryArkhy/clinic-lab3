@@ -1,0 +1,16 @@
+mixin priceTable(title,rows)
+  h5.mb-3.text-center= title
+  table.table.mb-5
+    thead.thead-dark
+      tr
+        th(scope='col') #
+        th(scope='col') Послуга
+        th(scope='col') Деталі
+        th(scope='col') Ціна, ₴
+    tbody
+      each row, index in rows
+        tr
+          th(scope='row') #{ index+1 }
+          td= row.title
+          td= row.details
+          td= row.price

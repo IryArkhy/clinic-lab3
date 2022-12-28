@@ -1,0 +1,11 @@
+mixin doctorCard(doctor)
+  .card.mb-3(style='max-width: 70%')
+    .row.no-gutters
+      .col-md-4
+        img.card-img(src=doctor.img, alt='doctor')
+      .col-md-8
+        .card-body
+          h5.card-title #{ doctor.name }
+          p.card-text #{ doctor.title }
+          p.card-text
+            mall.text-muted #{ doctor.exp } досвіду

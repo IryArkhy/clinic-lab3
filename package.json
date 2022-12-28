@@ -1,0 +1,30 @@
+{
+  "name": "clinic-lab3",
+  "version": "1.0.0",
+  "description": "Bootstrap + NodeJS Family Clinic Information Web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IryArkhy/clinic-lab3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IryArkhy/clinic-lab3/issues"
+  },
+  "homepage": "https://github.com/IryArkhy/clinic-lab3#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@prettier/plugin-pug": "^2.3.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1"
+  }
+}

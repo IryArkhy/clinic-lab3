@@ -1,0 +1,6 @@
+mixin feedbackCard(feedback)
+  .card.border-info.mb-3(style='max-width: 50%')
+    .card-header= feedback.author
+    .card-body.text-info
+      h5.card-title= feedback.title
+      .card-text= feedback.text

@@ -1,0 +1,10 @@
+.main_container {
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/01/09/52/people-2564100_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.main_phone {
+  color: #69e3c5;
+}
